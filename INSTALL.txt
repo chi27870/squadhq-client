@@ -1,4 +1,4 @@
-SquadHQ client mod 1.1.1
+SquadHQ client mod 1.1.2
 Minecraft 26.3, Fabric Loader 0.20.1, Fabric API 0.166.2+26.3, Java 25.
 
 The mod is visual. Inventories, dyes, bags, and the backpack slot are decided by the server.
@@ -9,10 +9,10 @@ Install
 2. Install Fabric Loader 0.20.1 for 26.3. https://fabricmc.net/use/installer
 3. Put Fabric API 0.166.2+26.3 in .minecraft/mods.
    https://cdn.modrinth.com/data/P7dR8mSH/versions/Zns5SSRA/fabric-api-0.166.2+26.3.jar
-4. Put mods/squadhq-client-1.1.1.jar in the same mods folder.
+4. Put mods/squadhq-client-1.1.2.jar in the same mods folder.
 5. Launch the Fabric 26.3 profile and join the network.
 
-Or import squadhq-client-1.1.1.mrpack in a Modrinth-compatible launcher.
+Or import squadhq-client-1.1.2.mrpack in a Modrinth-compatible launcher.
 That pack requires Minecraft 26.3 and Fabric Loader 0.20.1, downloads Fabric API,
 and places this jar from overrides/mods.
 
