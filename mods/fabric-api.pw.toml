@@ -1,0 +1,9 @@
+name = "Fabric API"
+filename = "fabric-api-0.166.2+26.3.jar"
+side = "client"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/P7dR8mSH/versions/Zns5SSRA/fabric-api-0.166.2+26.3.jar"
+hash-format = "sha256"
+hash = "e8acacc7836f39237c83c2a664b039647ee36f93822797acc40cda44666002ea"
