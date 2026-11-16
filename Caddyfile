@@ -1,0 +1,9 @@
+# Serve only this folder. browse is off, so there is no directory listing.
+# Caddy does not follow ".." out of the root. Do not add a file_server root above this folder.
+# Pick a port that is not Spawn's pack host (8163) or Shack's pack host (8164).
+:8170 {
+	root * C:\squadhq\client-downloads
+	file_server {
+		browse off
+	}
+}

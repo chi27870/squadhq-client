@@ -1,20 +1,62 @@
-SquadHQ client mod 1.1.2
+SquadHQ client mod 1.1.3
 Minecraft 26.3, Fabric Loader 0.20.1, Fabric API 0.166.2+26.3, Java 25.
 
 The mod is visual. Inventories, dyes, bags, and the backpack slot are decided by the server.
 A vanilla client sees plain chests, barrels, and pots. The dyed models are in this mod.
 
-Install
+Prism, kept up to date
+Import squadhq-client-1.1.3.zip with Add Instance, Import, and leave the window on the Import tab.
+That zip is a Prism instance. It already has:
+- Minecraft 26.3 and Fabric Loader 0.20.1
+- Fabric API and this mod
+- packwiz-installer-bootstrap.jar in the instance minecraft folder
+- this pre-launch command:
+  "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://chi27870.github.io/squadhq-client/pack.toml
+Every later launch asks that pack.toml for updates.
+
+squadhq-client-1.1.3.mrpack is the same mods for Modrinth and other launchers.
+It also carries instance.cfg and the bootstrap jar. Prism's Modrinth importer builds a
+new instance.cfg, so the zip above is the import that keeps the pre-launch command.
+
+Windows setup
+Double-click SquadHQSetup.exe. Windows SmartScreen says "Windows protected your PC"
+because the file is unsigned. Choose More info, then Run anyway.
+The setup finds Prism Launcher, or downloads portable Prism 11.1.1 into
+%LOCALAPPDATA%\SquadHQ\Prism if Prism is not installed. It writes the SquadHQ instance
+and adds a multiplayer server named SquadHQ at 47.135.237.34 (port 25565, the Velocity
+proxy). If that address is already in the list, it is not added again.
+SquadHQSetup.exe -server host:port uses that address instead.
+It then starts Prism. Prism downloads Java 25 itself the first time that instance launches.
+The first Prism launch asks you to sign in with your Microsoft account. That login is once.
+
+The exe is unsigned. See the note at the bottom.
+
+Pages files
+Upload every file listed in PAGES.txt to the root of github.com/chi27870/squadhq-client.
+The site URL is https://chi27870.github.io/squadhq-client/pack.toml
+
+Manual install
 1. Install Minecraft 26.3.
 2. Install Fabric Loader 0.20.1 for 26.3. https://fabricmc.net/use/installer
 3. Put Fabric API 0.166.2+26.3 in .minecraft/mods.
    https://cdn.modrinth.com/data/P7dR8mSH/versions/Zns5SSRA/fabric-api-0.166.2+26.3.jar
-4. Put mods/squadhq-client-1.1.2.jar in the same mods folder.
+4. Put mods/squadhq-client-1.1.3.jar in the same mods folder.
 5. Launch the Fabric 26.3 profile and join the network.
 
-Or import squadhq-client-1.1.2.mrpack in a Modrinth-compatible launcher.
-That pack requires Minecraft 26.3 and Fabric Loader 0.20.1, downloads Fabric API,
-and places this jar from overrides/mods.
+Code signing
+An unsigned exe is flagged by Microsoft SmartScreen ("Windows protected your PC")
+until enough people choose Run anyway, and some networks block it outright.
+Signing needs an OV or EV Authenticode certificate. The private key has to live
+on a hardware token or cloud HSM (CA/Browser Forum rule since June 2023).
 
-The server pack is the armor HUD only. Dyed chest art is in this mod.
-Do not replace the server pack with this jar.
+Published 2026 prices, before tax:
+- SSL.com OV is about $110 to $130 a year, plus about $379 once if you need their YubiKey.
+- DigiCert OV is about $700 a year on your own token, or about $840 with their token.
+- Sectigo's own site starts at $536.25 a year on a five-year term, token included.
+- EV is about $250 to $400 a year at the low end and about $700 to $1,100 at DigiCert.
+  Since 2024 an EV certificate does not skip SmartScreen. It builds reputation the same way OV does.
+- Azure Artifact Signing is about $10 a month, but only for organizations in the US, Canada, the EU,
+  or the UK, and for individuals in the US or Canada.
+
+This build is unsigned. A signature would be applied to SquadHQSetup.exe after a certificate exists.
+The jar, mrpack, and zip do not need that certificate.
