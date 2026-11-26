@@ -1,9 +1,9 @@
 name = "SquadHQ Client"
-filename = "squadhq-client-1.1.3.jar"
+filename = "squadhq-client-1.1.4.jar"
 side = "client"
 
 [download]
 mode = "url"
-url = "https://chi27870.github.io/squadhq-client/mods/squadhq-client-1.1.3.jar"
+url = "https://chi27870.github.io/squadhq-client/mods/squadhq-client-1.1.4.jar"
 hash-format = "sha256"
-hash = "c28d7a946dc434770cf2e4c9a3f9d5b5f16b122fbb4c6e776889032676fc709e"
+hash = "a90cd49cedd0defa6009509b73a763d79a0c35e9d42323740aa17c65b68ba115"
