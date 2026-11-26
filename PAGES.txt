@@ -6,15 +6,15 @@ index.html
 INSTALL.txt
 web.config
 Caddyfile
-squadhq-client-1.1.3.mrpack
-squadhq-client-1.1.3.zip
+squadhq-client-1.1.4.mrpack
+squadhq-client-1.1.4.zip
 mods/fabric-api.pw.toml
 mods/squadhq-client.pw.toml
-mods/squadhq-client-1.1.3.jar
+mods/squadhq-client-1.1.4.jar
 SquadHQSetup.exe
 
 pack.toml is https://chi27870.github.io/squadhq-client/pack.toml
-The client jar URL inside mods/squadhq-client.pw.toml is https://chi27870.github.io/squadhq-client/mods/squadhq-client-1.1.3.jar
+The client jar URL inside mods/squadhq-client.pw.toml is https://chi27870.github.io/squadhq-client/mods/squadhq-client-1.1.4.jar
 Fabric API is downloaded from Modrinth, not from Pages.
 The Prism pre-launch command is:
 "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://chi27870.github.io/squadhq-client/pack.toml
